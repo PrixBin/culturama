@@ -3,44 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="culturama-favicon.ico" type="image/png">>
+    <link rel="icon" href="culturama-favicon.ico" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <title>Pesquisa Culturama</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <main>
     <header>
         <img src="img/culturama-favico.png" alt="Logo Culturama">
         <h1>Pesquisa Online</h1>
     </header>
     <section>
         <form action="" method="get">
-            <Dados Pessoais
 
             <fieldset>
                 <legend>Dados Pessoais</legend>
 
            
                 <label for="userName">Nome:</label>
-                <input type="text" required>
+                <input id="userName" type="text" name="userName" required>
                 <br>
 
                 <label for="userAge">Idade:</label>
-                <input type="number" required min="12" max="100">
+                <input id="userAge" type="number" name="userAge" required min="12" max="100">
                 <br>
 
                 <label for="userBirthDate">Data de Nascimento:</label>
-                <input type="date" name="userBirthDate" >
+                <input id="userBirthDate" type="date" name="userBirthDate" >
                 <br>
 
                 <label for="userEmail">Email:</label>
-                <input type="email" name="userEmail" required>
+                <input id="userEmail" type="email" name="userEmail" required>
                 <br>
 
                 <label for="userPhoneNumber">Telefone:</label>
-                <input type="tel" name="userPhoneNumber" pattern="[0-9]{11}" placeholder="123456789">
+                <input id="userPhoneNumber" type="tel" name="userPhoneNumber" pattern="[0-9]{11}" placeholder="123456789">
                 <br>
 
                 <label for="userImage">Upload de Foto</label>
-                <input type="file" name="userImage" accept="image/*">
+                <input id="userImage" type="file" name="userImage" accept="image/*">
                 <br>
 
             </fieldset> 
@@ -50,18 +54,18 @@
                 <legend>Perfil</legend>
 
                 <p>Gênero</p>
-                <input type="radio"button name="userGender" value="feminino">
-                <label for="userGender">Feminino</label>
+                <input id="feminino" type="radio" name="userGender" value="feminino">
+                <label for="feminino">Feminino</label>
 
-                <input type="radio"button name="userGender" value="masculino">
-                <label for="userGender">Masculino</label>
+                <input id="masculino" type="radio" name="userGender" value="masculino">
+                <label for="masculino">Masculino</label>
 
-                <input type="radio"button name="userGender" value="naoinformado">
-                <label for="userGender">Não Informar</label>
+                <input id="naoinformado" type="radio" name="userGender" value="naoinformado">
+                <label for="naoinformado">Não Informar</label>
                 <br>
 
                 <label for="maritalStatus">Estado Civil</label>
-                <select name="maritalStatus">
+                <select id="maritalStatus" name="maritalStatus">
                     <option value="solteiro">Solteiro</option>
                     <option value="casado">Casado</option>
                     <option value="divorciado">Divorciado</option>
@@ -70,7 +74,7 @@
                 <br>
 
                 <label for="userState">Estado</label>
-                <select name="userState"required>
+                <select id="userState" name="userState" required>
                     <option value="acre">Acre</option>
                     <option value="alagoas">Alagoas</option>
                     <option value="amapa">Amapá</option>
@@ -84,7 +88,7 @@
                     <option value="matoGrossoDoSul">Mato Grosso do Sul</option>
                     <option value="matoGrosso">Mato Grosso</option>
                     <option value="minasGerais">Minas Gerais</option>
-                    <option value="para">Pára</option>
+                    <option value="para">Pará</option>
                     <option value="paraiba">Paraíba</option>
                     <option value="parana">Paraná</option>
                     <option value="pernambuco">Pernambuco</option>
@@ -107,7 +111,7 @@
                 <br>
 
                 <label for="cidade">Cidade:</label>
-                <input type="text" name="cidade">
+                <input id="cidade" type="text" name="cidade">
 
                 
 
@@ -118,17 +122,17 @@
                 <legend>Hábitos</legend>
 
                 <p>Redes Sociais</p>
-                <input id="facebook" type="checkbox" name=" social" value="facebook">
+                <input id="facebook" type="checkbox" name="social" value="facebook">
                 <label for="facebook">Facebook</label>
 
-                <input type="checkbox" name=" social" value="instagram">
-                <label for="social">Instagram</label>
+                <input id="instagram" type="checkbox" name="social" value="instagram">
+                <label for="instagram">Instagram</label>
 
-                <input type="checkbox" name=" social" value="linkedin">
-                <label for="social">Linkedin</label>
+                <input id="linkedin" type="checkbox" name="social" value="linkedin">
+                <label for="linkedin">Linkedin</label>
 
-                <input type="checkbox" name=" social" value="x">
-                <label for="social">X</label>
+                <input id="x" type="checkbox" name="social" value="x">
+                <label for="x">X</label>
                 <br>
 
                     <label for="musicalStyle">Estilo Musical</label>
@@ -161,6 +165,6 @@
 
         </form>
     </section>
-    
+    </main>
 </body>
 </html>
