@@ -101,4 +101,33 @@ button{
     background-color: orangered;
     color: wheat;
 }
-    
+.sucesso {
+    background-color: #ffffff;
+    text-align: center;
+    padding: 40px 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+
+.sucesso p {
+    font-size: 1.2rem;
+    margin-bottom: 24px;
+}
+
+.sucesso a {
+    display: inline-block;
+    background-color: #000000;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 12px 24px;
+    border-radius: 6px;
+}
+
+.sucesso a:hover {
+    background-color: #333333;
+}
+
+.sucesso a:focus-visible {
+    outline: 3px solid #005fcc;
+    outline-offset: 2px;
+}
